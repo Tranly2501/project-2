@@ -8,6 +8,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+
 }
 /* =====================common=============== */
 a{
@@ -17,20 +18,21 @@ a{
 
 .main-content{
     width: 1170px;
-    max-width: calc(100%-48px);
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
 
 /* ==============header============ */
-.header .fixed{
-    position: sticky;
-    top: -28px;
+
+.header {
+    z-index: 1;
+    position:sticky;
+    top: -40px;
 }
 .header .body{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 52px 0 8px ;
 }
 .nav{
@@ -38,22 +40,35 @@ a{
 }
 .nav ul{
     display: flex; 
+    
 }
-
+.nav li {
+     padding: 8px 19.5px;
+}
 .nav a{
-    position: relative;
     color: #2F3A3B;
-    font-size: 1.6rem;    
-    padding-bottom: 8px;
-    padding-left: 39px;
-
+    font-size: 1.6rem; 
+    font-weight: 400;  
 }
-.nav li.active a, .nav a:hover{
-    color: #2F3A3B;
-    font-size: 1.6rem;
+.nav a:hover{
     font-weight: 600;
     text-shadow: 1px 0  0   currentColor;
 }
-.header .action .btn-left{
-   margin-left: 135px;
+
+.header .action{
+    margin-left: 135px;
+}
+.header .cta-btn { 
+     padding: 12px 24px ;
+     box-sizing: border-box;
+     color: #494949;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+.header .cta-btn:active{
+    border: 1px solid #1EBFC1;
+    color: #1EBFC1;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
