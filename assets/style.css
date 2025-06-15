@@ -359,7 +359,7 @@ a{
 }
 
 .courses .view-courses{
-    display: flex;
+   display: flex;
     gap: 30px;
 }
 
