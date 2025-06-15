@@ -156,6 +156,8 @@ a{
     left: -40px;
     border-radius: 18px;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 .hero .box1 .book{
     padding-right: 16px;
@@ -311,5 +313,150 @@ a{
 
 .features .icon-task{
     background-color: #BF83FF;
+}
+
+/* =============courses============ */
+.courses{
+    padding: 0 8px;
+}
+.courses .text {
+    padding-top: 36px;
+    padding-bottom: 79px;
+}
+.courses h2{
+    padding-bottom: 19px;
+    color: #0D1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.courses .desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses .desc-courses{
+    max-width: 525px;
+    width: 100%;
+    color: #767E7E;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+
+}
+.courses .desc a{
+    color: #1EBFC1;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.courses .view-courses{
+    display: flex;
+    gap: 30px;
+}
+
+
+.courses .view-courses .image{
+    position: relative;
+    overflow: hidden;
+    width: 359px;
+    height: 393px;
+}
+
+.courses .image .ovelay{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #cef6f3;
+}
+
+.courses .card {
+    border-radius: 8px;
+    display: block;
+    position: relative;
+
+}
+.courses  .info-courses  {
+     box-sizing: border-box;
+     position: absolute;
+     left:17px;
+     top: 322px;
+    padding: 29px 82px 29px 25px ;
+    width: 325px;
+    height: 195px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+  
+}
+
+.courses .info-courses .title{
+    color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses .info-courses .price{
+    color: #767E7E;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+    .courses .info-courses span{
+        color: #0D1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.courses .info-courses .name{
+    margin-top: 6px;
+    color: #9DA6A5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.courses .info-courses .info{
+    display: flex;
+    gap: 10px;
+    padding-top: 18px;
+    padding-bottom: 29px;
+}
+
+/* ===================countdown========== */
+
+.countdown {
+    padding: 264px 154px;
+    
+}
+.countdown  .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.countdown .gr .number{
+    color: #0D1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+
+.countdown .gr .desc{
+    margin-top: 11px;
+    color: #767E7E;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
