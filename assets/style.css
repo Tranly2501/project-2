@@ -253,7 +253,11 @@ a{
     padding: 130px 8px ;
     
 }
+.features .main-content{
 
+    display: flex;
+    flex-wrap: wrap;
+}
 .features .text{
     padding-bottom: 80px;
     width: 591px;
@@ -320,7 +324,15 @@ a{
 /* =============courses============ */
 .courses{
     padding: 0 8px;
+     max-width: calc(100% - 48px);
+    width: 1170;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+.courses .main-content{
+    display: flex;
+    flex-wrap: wrap;
 }
 .courses .text {
     padding-top: 36px;
@@ -471,8 +483,14 @@ a{
 
 }
 .testimonial .body{
+     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+     max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
 }
 .testimonial .content{
    padding: 37px 0 37px;
@@ -614,11 +632,14 @@ a{
 }
 .ready .body{
     padding: 36px 0  88px 111px;
+    align-items: center;
 }
 .ready .main-content{
     display: flex;
     justify-content: center;
        align-items: center;
+       max-width: 1170;
+       width: 100%;
 }
 .ready .content h2{
     color: #070707;
@@ -643,4 +664,93 @@ a{
     border-radius: 14px;
     background: #2AC9BF;
     border: none;
+}
+
+/* =============footer=========== */
+.footer-content{
+    margin: 131px 0 30px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer-content .main-content{
+    display: flex;
+    min-width: 1170px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 144px;
+    margin-bottom: 80px;
+}
+
+.footer-content .column{
+    min-width: 90px;
+}
+.footer-content .column .title{
+     color: #2E2E2E;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.footer-content .list ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+.footer-content .list li{
+    margin-bottom: 20px;
+}
+.footer-content  .list a, .footer-content .list .icon{
+    display: inline-block;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+     text-decoration: none;
+     display: flex;
+}
+.footer-content .list img{
+    margin-right: 9px;
+}
+
+.footer-content .text{
+    color: #B0B5B4;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .features .text,
+    .courses .text,
+    .ready .content {
+        text-align: center;
+    }
+
+    .header .body,
+    .courses .desc,
+    .testimonial .body,
+    .ready .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .body {
+        flex-direction: column;
+    }
+
+    .hero .content-right {
+        margin: 40px 0 0;
+    }
+
+    .courses .view-courses,
+    .countdown .body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-left: 0;
+        text-align: center;
+    }
 }
